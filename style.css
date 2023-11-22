@@ -75,3 +75,7 @@
 .dead-pet .love {
   display: none;
 }
+
+h1 {
+  text-align: center;
+}
