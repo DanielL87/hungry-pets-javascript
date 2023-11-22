@@ -1,0 +1,77 @@
+#cards-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pet-card {
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 160px;
+  height: auto;
+  padding: 10px;
+  border: 2px solid grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+.pet-emoji {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.pet-name {
+  margin: -5px;
+  font-weight: bold;
+}
+
+.hunger-bar {
+  border: 1px solid black;
+  width: 90px;
+  height: 8px;
+  background-color: #ccc;
+  position: relative;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.hunger-fill {
+  height: 100%;
+  background-color: #f00;
+  transition: width 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.love-bar {
+  border: 1px solid black;
+  width: 90px;
+  height: 8px;
+  background-color: #ccc;
+  position: relative;
+  margin-top: -5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.love-fill {
+  height: 100%;
+  background-color: green;
+  transition: width 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.dead-pet {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.dead-pet .hunger-bar,
+.dead-pet .love-bar,
+.dead-pet button,
+.dead-pet .hunger,
+.dead-pet .love {
+  display: none;
+}
